@@ -11,7 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Interactive rating component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,20 +34,22 @@
   <body>
     <!-- Rating state start -->
     <div class="container-rating-state">
-      <img class="icon-star" src="./images/icon-star.svg" />
+      <div class="container-icon-star">
+        <img class="icon-star" src="./images/icon-star.svg" />
+      </div>
       <h2>How did we do?</h2>
       <p class="p-rating-state">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li><span class="rating-number">1</span></li>
+        <li><span class="rating-number">2</span></li>
+        <li><span class="rating-number">3</span></li>
+        <li><span class="rating-number">4</span></li>
+        <li><span class="rating-number">5</span></li>
       </ul>
-      <button>Submit</button>
+      <button>SUBMIT</button>
     </div>
 
     <!-- Rating state end -->
@@ -49,18 +57,22 @@
     <!-- Thank you state start -->
 
     <div class="container-thank-state">
-      <img class="img-thank-state" src="./images/illustration-thank-you.svg">
-      <p class="selected-number"> You selected <!-- number selected in container rating state --> out of 5</p>
+      <img class="img-thank-state" src="./images/illustration-thank-you.svg" />
+      <p class="selected-number">
+        You selected
+        <!-- number selected in container rating state -->
+        out of 5
+      </p>
 
-      <h2 class="h2-thank-state"> Thank you! </h2>
+      <h2 class="h2-thank-state">Thank you!</h2>
 
-      <p class="p-thank-state">    We appreciate you taking the time to give a rating. If
-        you ever need more support, don’t hesitate to get in touch!</p>
-
+      <p class="p-thank-state">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
     </div>
-   
-    <!-- Add rating here -->
 
+    <!-- Add rating here -->
 
     <!-- Thank you state end -->
 
